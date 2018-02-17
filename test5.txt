@@ -1,0 +1,9 @@
+;Program 1:
+MOV 10, R6
+MOV 0, R0
+MOV 1, R1
+ADD R0, R7
+INC R1
+BGT R6, R1, LOOP
+ADD 1, R6
+END

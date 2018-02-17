@@ -5,11 +5,19 @@ import java.util.ArrayList;
  */
 public class Node {
     ArrayList<Node> children;
-
+    Type type;
     Token token;
 
-    public Node(Token token){
+    public Node(ArrayList<Token> tokens){
+        if (tokens.isEmpty()) {
+            // oops
+        } else {
+            token = tokens.get(0);
+        }
         children = new ArrayList<>();
-        this.token = token;
+    }
+    @Override
+    public String toString() {
+        return type + " " + token + ": " + children;
     }
 }

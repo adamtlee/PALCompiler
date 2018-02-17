@@ -1,0 +1,11 @@
+      SRT
+      MOVE 1,  R1
+      MOVE 0,  R2
+      MOVE 5,  R6
+      MOVE 0,  R7
+LONE: MUL  R1, R1, R2
+      ADD  R2, R7, R7
+      INC  R1
+      BEQ  R6, R1, DONE
+      BR   LONE
+DONE: END

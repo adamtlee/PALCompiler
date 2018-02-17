@@ -1,0 +1,9 @@
+SRT
+;1*2/2*2/3*4/4*12/5*48
+	MOV R1, #5
+	MOV R2, #1
+	MOV R7, #2
+LOOP	MUL R2, R7, R7
+	INC R2
+	BGT R1, R2, LOOP
+	END
