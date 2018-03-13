@@ -4,6 +4,7 @@ import java.util.ArrayList;
  * Created by adaml on 2/14/2018.
  */
 public class Instruction extends Node {
+
     public Instruction(ArrayList<Token> tokens) {
         super(tokens);
         type = Type.INSTRUCTION;

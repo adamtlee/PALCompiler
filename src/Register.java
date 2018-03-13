@@ -4,6 +4,11 @@ import java.util.ArrayList;
  * Created by adaml on 2/16/2018.
  */
 public class Register extends Node {
+    /**
+     * Checks to see which registers that the PAL code has
+     * @author adaml
+     * @param tokens Use to build the Register node.
+     */
     public Register(ArrayList<Token> tokens) {
         super(tokens);
         token = tokens.remove(0);

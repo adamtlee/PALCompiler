@@ -3,6 +3,10 @@ import java.util.ArrayList;
 /**
  * Created by adaml on 2/14/2018.
  */
+
+/**
+ * Node is the leaf on a parse tree
+ */
 public class Node {
     ArrayList<Node> children;
     Type type;
